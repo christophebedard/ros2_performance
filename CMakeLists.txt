@@ -14,6 +14,10 @@ add_executable(nopub src/nopub.cc)
 ament_target_dependencies(nopub rclcpp std_msgs)
 install(TARGETS nopub DESTINATION lib/${PROJECT_NAME})
 
+add_executable(nopub_onenode src/nopub_onenode.cc)
+ament_target_dependencies(nopub_onenode rclcpp std_msgs)
+install(TARGETS nopub_onenode DESTINATION lib/${PROJECT_NAME})
+
 add_executable(noros src/noros.cc)
 ament_target_dependencies(noros std_msgs rclcpp)
 install(TARGETS noros DESTINATION lib/${PROJECT_NAME})
