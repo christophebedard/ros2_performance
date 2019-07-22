@@ -3,8 +3,7 @@
 #include <std_msgs/msg/string.hpp>
 
 /*
- * Same as ros.cc, except that it does not publish or subscribe.
- * It goes give a considerable load already.
+ * Same as nopub.cc, but with only 1 node.
  */
 
 int main(int argc, char **argv) {
